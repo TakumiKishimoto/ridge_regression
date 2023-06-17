@@ -1,0 +1,68 @@
+[tool.poetry]
+name = "my-python-templete"
+version = "0.1.0"
+description = ""
+authors = ["naoki <74347818+C-naoki@users.noreply.github.com>"]
+readme = "README.md"
+
+[project]
+name = "my-python-templete"
+version = "0.1.0"
+description = "Personal Python Template"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+numpy = "^1.24.3"
+pandas = "^2.0.2"
+matplotlib = "^3.7.1"
+scikit-learn = "^1.2.2"
+jupyter = "^1.0.0"
+ipykernel = "^6.23.2"
+seaborn = "^0.12.2"
+tqdm = "^4.65.0"
+pygithub = "^1.58.2"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^2.18.1"
+taskipy = "^1.10.1"
+black = "^22.3.0"
+mypy = "^0.942"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
+flake8-isort = "^4.1.1"
+flake8-bugbear = "^22.3.23"
+flake8-builtins = "^1.5.3"
+flake8-eradicate = "^1.2.0"
+flake8-pytest-style = "^1.6.0"
+flake8-unused-arguments = "^0.0.9"
+pep8-naming = "^0.12.1"
+pytest = "^7.1.1"
+pytest-mock = "^3.7.0"
+pytest-cov = "^3.0.0"
+Sphinx = "^4.5.0"
+sphinx-rtd-theme = "^1.0.0"
+sphinx-pyproject = "^0.1.0"
+
+[tool.black]
+line-length = 79
+
+[tool.isort]
+profile = "black"
+line_length = 79
+
+[tool.sphinx-pyproject]
+project = "my-python-templete"
+copyright = "2023, naoki"
+language = "en"
+package_root = "my-python-templete"
+html_theme = "sphinx_rtd_theme"
+todo_include_todos = true
+templates_path = ["_templates"]
+html_static_path = ["_static"]
+extensions = [
+  "sphinx.ext.autodoc",
+  "sphinx.ext.viewcode",
+  "sphinx.ext.todo",
+  "sphinx.ext.napoleon",
+]
